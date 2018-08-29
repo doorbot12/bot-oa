@@ -263,7 +263,7 @@ function lirik($keyword) {
 }
 #-------------------------[Function]-------------------------#
 function music($keyword) { 
-    $uri = "http://ide.fdlrcn.com/workspace/yumi-apis/joox?songname=" . $keyword . ""; 
+    $uri = "https://rest.farzain.com/api/joox.php" . $keyword . ""; 
  
     $response = Unirest\Request::get("$uri"); 
  
