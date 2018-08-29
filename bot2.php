@@ -263,7 +263,7 @@ function lirik($keyword) {
 }
 #-------------------------[Function]-------------------------#
 function music($keyword) { 
-    $uri = "https://rest.farzain.com/api/joox.php" . $keyword . ""; 
+    $uri = "https://rest.farzain.com/api/joox.php?id=" . $keyword . ""; 
  
     $response = Unirest\Request::get("$uri"); 
  
